@@ -19,7 +19,7 @@
 </script>
 
 <style lang="scss">
-  @import "~materialize-css/dist/css/materialize.min.css";
+  @import "assets/materialize.css";
   @import "assets/index.css";
   @import "assets/custom.css";
 </style>

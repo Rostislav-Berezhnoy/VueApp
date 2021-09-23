@@ -14,8 +14,10 @@
 .datepicker-date-display .date-text {
     font-size: 1.5rem !important;
 }
-.datepicker-date-display{
-    background-color: #2196F3;
+
+.month-next:focus, .month-prev:focus, .datepicker-day-button:focus{
+    color: #fff !important;
+    background-color: #2196F3 !important;
 }
 .text-right{
     text-align: right;

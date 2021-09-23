@@ -58,12 +58,12 @@
                 <input
                     id="elMetNo"
                     type="text"
-                    v-model.trim="form.ElectricityMeter[0].No"
+                    v-model.trim="form.ElectricityMeters.No"
                 >
                 <label for="elMetNo">Номер счетчика электрической энергии</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.ElectricityMeter.$each[0].No.$dirty && !$v.form.ElectricityMeter.$each[0].No.required"
+                    v-if="$v.form.ElectricityMeters.No.$dirty && !$v.form.ElectricityMeters.No.required"
                 >Поле не может быть пустым</span>
               </div>
 
@@ -71,12 +71,12 @@
                 <input
                     id="elMetType"
                     type="text"
-                    v-model.trim="form.ElectricityMeter[0].Type"
+                    v-model.trim="form.ElectricityMeters.Type"
                 >
                 <label for="elMetType">Тип счетчика электрической энергии</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.ElectricityMeter.$each[0].Type.$dirty && !$v.form.ElectricityMeter.$each[0].Type.required"
+                    v-if="$v.form.ElectricityMeters.Type.$dirty && !$v.form.ElectricityMeters.Type.required"
                 >Поле не может быть пустым</span>
               </div>
 
@@ -86,12 +86,12 @@
                     class="datepicker"
                     type="text"
                     ref="elMetVerDate"
-                    v-model.lazy="form.ElectricityMeter[0].VerificationDate"
+                    v-model.lazy="form.ElectricityMeters.VerificationDate"
                 >
                 <label for="elMetVerDate">Дата поверки счетчика электрической энергии</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.ElectricityMeter.$each[0].VerificationDate.$dirty && !$v.form.ElectricityMeter.$each[0].VerificationDate.required"
+                    v-if="$v.form.ElectricityMeters.VerificationDate.$dirty && !$v.form.ElectricityMeters.VerificationDate.required"
                 >Поле не может быть пустым</span>
               </div>
             </form>
@@ -102,12 +102,12 @@
                 <input
                     id="elTransNo"
                     type="text"
-                    v-model.trim="form.ElectricalTransformer[0].No"
+                    v-model.trim="form.ElectricalTransformers.No"
                 >
                 <label for="elTransNo">Номер трансформатора тока</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.ElectricalTransformer.$each[0].No.$dirty && !$v.form.ElectricalTransformer.$each[0].No.required"
+                    v-if="$v.form.ElectricalTransformers.No.$dirty && !$v.form.ElectricalTransformers.No.required"
                 >Поле не может быть пустым</span>
               </div>
 
@@ -115,12 +115,12 @@
                 <input
                     id="elTransType"
                     type="text"
-                    v-model.trim="form.ElectricalTransformer[0].Type"
+                    v-model.trim="form.ElectricalTransformers.Type"
                 >
                 <label for="elTransType">Тип трансформатора тока</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.ElectricalTransformer.$each[0].Type.$dirty && !$v.form.ElectricalTransformer.$each[0].Type.required"
+                    v-if="$v.form.ElectricalTransformers.Type.$dirty && !$v.form.ElectricalTransformers.Type.required"
                 >Поле не может быть пустым</span>
               </div>
 
@@ -130,25 +130,25 @@
                     class="datepicker"
                     type="text"
                     ref="elTransDate"
-                    v-model.lazy="form.ElectricalTransformer[0].VerificationDate"
+                    v-model.lazy="form.ElectricalTransformers.VerificationDate"
                 >
                 <label for="elTransVerDate">Дата поверки трансформатора тока</label>
+                <span
+                    class="helper-text invalid"
+                    v-if="$v.form.ElectricalTransformers.VerificationDate.$dirty && !$v.form.ElectricalTransformers.VerificationDate.required"
+                >Поле не может быть пустым</span>
               </div>
 
               <div class="input-field">
                 <input
                     id="elTransRatio"
                     type="number"
-                    v-model.trim="form.ElectricalTransformer[0].TransformationRatio"
+                    v-model.trim="form.ElectricalTransformers.TransformationRatio"
                 >
                 <label for="elTransRatio">Коэффициент трансформации трансформатора тока</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.ElectricalTransformer.$each[0].VerificationDate.$dirty && !$v.form.ElectricalTransformer.$each[0].VerificationDate.required"
-                >Поле не может быть пустым</span>
-                <span
-                    class="helper-text invalid"
-                    v-if="$v.form.ElectricalTransformer.$each[0].TransformationRatio.$dirty && !$v.form.ElectricalTransformer.$each[0].TransformationRatio.required"
+                    v-if="$v.form.ElectricalTransformers.TransformationRatio.$dirty && !$v.form.ElectricalTransformers.TransformationRatio.required"
                 >Поле не может быть пустым</span>
               </div>
             </form>
@@ -159,12 +159,12 @@
                 <input
                     id="voltTransNo"
                     type="text"
-                    v-model.trim="form.VoltageTransformer[0].No"
+                    v-model.trim="form.VoltageTransformers.No"
                 >
                 <label for="voltTransNo">Номер трансформатора напряжения</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.VoltageTransformer.$each[0].No.$dirty && !$v.form.VoltageTransformer.$each[0].No.required"
+                    v-if="$v.form.VoltageTransformers.No.$dirty && !$v.form.VoltageTransformers.No.required"
                 >Поле не может быть пустым</span>
               </div>
 
@@ -172,12 +172,12 @@
                 <input
                     id="voltTransType"
                     type="text"
-                    v-model.trim="form.VoltageTransformer[0].Type"
+                    v-model.trim="form.VoltageTransformers.Type"
                 >
                 <label for="voltTransType">Тип трансформатора напряжения</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.VoltageTransformer.$each[0].Type.$dirty && !$v.form.VoltageTransformer.$each[0].Type.required"
+                    v-if="$v.form.VoltageTransformers.Type.$dirty && !$v.form.VoltageTransformers.Type.required"
                 >Поле не может быть пустым</span>
               </div>
 
@@ -187,12 +187,12 @@
                     class="datepicker"
                     type="text"
                     ref="voltTransDate"
-                    v-model.lazy="form.VoltageTransformer[0].VerificationDate"
+                    v-model.lazy="form.VoltageTransformers.VerificationDate"
                 >
                 <label for="voltTransVerDate">Дата поверки трансформатора напряжения</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.VoltageTransformer.$each[0].VerificationDate.$dirty && !$v.form.VoltageTransformer.$each[0].VerificationDate.required"
+                    v-if="$v.form.VoltageTransformers.VerificationDate.$dirty && !$v.form.VoltageTransformers.VerificationDate.required"
                 >Поле не может быть пустым</span>
               </div>
 
@@ -200,12 +200,12 @@
                 <input
                     id="voltTransRatio"
                     type="number"
-                    v-model.trim="form.VoltageTransformer[0].TransformationRatio"
+                    v-model.trim="form.VoltageTransformers.TransformationRatio"
                 >
                 <label for="voltTransRatio">Коэффициент трансформации трансформатора напряжения</label>
                 <span
                     class="helper-text invalid"
-                    v-if="$v.form.VoltageTransformer.$each[0].TransformationRatio.$dirty && !$v.form.VoltageTransformer.$each[0].TransformationRatio.required"
+                    v-if="$v.form.VoltageTransformers.TransformationRatio.$dirty && !$v.form.VoltageTransformers.TransformationRatio.required"
                 >Поле не может быть пустым</span>
               </div>
             </form>
@@ -231,51 +231,45 @@ export default {
     form: {
       name: '',
       consumptionObjectID: null,
-      ElectricityMeter: [{
+      ElectricityMeters: {
         No: '',
         Type: '',
         VerificationDate: ''
-      }],
-      VoltageTransformer: [{
+      },
+      VoltageTransformers: {
         No: '',
         Type: '',
         VerificationDate: '',
         TransformationRatio: null
-      }],
-      ElectricalTransformer: [{
+      },
+      ElectricalTransformers: {
         No: '',
         Type: '',
         VerificationDate: '',
         TransformationRatio: null
-      }]
+      }
     }
   }),
   validations: {
     form: {
       name: { required },
       consumptionObjectID: { required },
-      ElectricityMeter: {
-        $each: {
-          No: { required },
-          Type: { required },
-          VerificationDate: { required }
-        }
+      ElectricityMeters: {
+        No: { required },
+        Type: { required },
+        VerificationDate: { required }
       },
-      VoltageTransformer: {
-        $each: {
-          No: { required },
-          Type: { required },
-          TransformationRatio: { required },
-          VerificationDate: { required }
-        }
+      VoltageTransformers: {
+        No: { required },
+        Type: { required },
+        TransformationRatio: { required },
+        VerificationDate: { required }
       },
-      ElectricalTransformer: {
-        $each: {
-          No: { required },
-          Type: { required },
-          TransformationRatio: { required },
-          VerificationDate: { required }
-        }
+      ElectricalTransformers: {
+        No: { required },
+        Type: { required },
+        TransformationRatio: { required },
+        VerificationDate: { required }
       }
     }
   },
